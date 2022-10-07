@@ -1,4 +1,5 @@
 # MiddleWare
+
 > 미들웨어 함수는 요청 오브젝트(req), 응답 오브젝트 (res), 그리고 애플리케이션의 요청-응답 주기 중 그 다음의 미들웨어 함수 대한 액세스 권한을 갖는 함수입니다. 그 다음의 미들웨어 함수는 일반적으로 next라는 이름의 변수로 표시됩니다.
 
 미들웨어 함수는 다음과 같은 Task를 수행할 수 있습니다.
@@ -7,7 +8,7 @@
 - 요청-응답 주기를 종료.
 - 스택 내의 그 다음 미들웨어를 호출.
 
-![img.png](img.png)
+![middleware.png](./image/middleware.png)
 
 ```
 //app.use가 Middleware가 아니라 함수 부분이 Middleware이다.(Middleware를 app에다 장착시킨것!)
@@ -18,7 +19,7 @@ app.use((req, resㅡ, next) => {
 ```  
 
 ## 에러처리 미들웨어
-![img_1.png](img_1.png)
+![middleware2.png](./image/middleware2.png)
 
 ```
 // 에러 미들웨어 : 에러 미들웨어는 반드시 매개변수 4개 다 써줘야한다.
@@ -30,7 +31,7 @@ app.use((err, req, res, next) => {
 ```
 
 ## 자주 쓰는 미들웨어
-![img_2.png](img_2.png)
+![middleware3.png](./image/middleware3.png)
 
 ---
 ## Appendix
