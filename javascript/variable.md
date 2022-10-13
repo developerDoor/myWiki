@@ -9,7 +9,7 @@
 - 변수 선언 방법
 
   - 변수 선언
-    ```
+    ```javascript
     var book;
     ```
     1. var를 작성하고 변수 이름 작성(var 사용하지마!!!)
@@ -17,7 +17,7 @@
     #
   - 값을 변수에 할당
 
-    ```
+    ```javascript
     var book = "책";
     ```
 
@@ -27,23 +27,24 @@
     #
 
   - 콤마로 구분
-    ```
-    var book = "책", point = 123;
+    ```javascript
+    var book = "책",
+      point = 123;
     ```
     1. 콤마(,) 다음에 var를 작성하지 않음
     2. 콤마와 변수 이름 사이에 일반적으로 한 칸 띄움
     3. 세미콜론 앞까지 콤마 사용 가능
     #
   - 줄을 바꾸어 작성
-    ```
+    ```javascript
     var book = "책",
-        point = 123;
+      point = 123;
     ```
     #
   - 변수 앞에 콤마 작성
-    ```
-    var book = "책"
-        , point = 123;
+    ```javascript
+    var book = "책",
+      point = 123;
     ```
     #
 
@@ -53,10 +54,11 @@
 
 - 값을 변수에 할당하는 방법
   - 나중에 할당한 값으로 바뀐다.
-    ```
-    var point = 123, point = 456; // 456이 최종값
+    ```javascript
+    var point = 123,
+      point = 456; // 456이 최종값
     ```
   - 같은 값 할당(권장 형태는 아님.)
-    ```
-    var point = amount = 123;
+    ```javascript
+    var point = (amount = 123);
     ```

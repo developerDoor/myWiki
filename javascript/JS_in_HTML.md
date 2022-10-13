@@ -6,7 +6,7 @@
 - defer 속성 작성
 - HTML과 JS 분리
 
-```
+```html
 <head>
     <script src="hello.js" defer></script>
 </head>
@@ -15,13 +15,15 @@
 </body>
 ```
 
+#
+
 ## HTML 파일에 JS 코드 직정 작성
 
 - `<script>`에 아래 처럼 JS 코드를 직접 작성`</script>`
 - 웹 페이지에 한정할 때 사용한다.
 
-```
+```html
 <script>
-    var hello = "안녕하세요?";
+  var hello = "안녕하세요?";
 </script>
 ```
