@@ -22,6 +22,13 @@
 //     // expected output: "Parameter is not a number!"
 // }
 
-const x = Error('1');
-const y = Error('1');
-console.log(x == y);
+// const x = Error('1');
+// const y = Error('1');
+// console.log(x == y);
+
+try {
+    new Error("에러 났지롱");
+    console.log("이거 실행하니?");
+}catch (err) {
+    console.log(err)
+}
